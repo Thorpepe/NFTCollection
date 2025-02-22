@@ -1,0 +1,99 @@
+{
+  "collectionName": "CryptoBeasts",
+  "description": "A collection of 5,000 unique digital creatures with various traits and rarities",
+  "collectionSize": 5000,
+  "baseURI": "https://cryptobeasts.io/api/metadata/",
+  "externalUrl": "https://cryptobeasts.io",
+
+  "layers": [
+    {
+      "name": "background",
+      "directory": "./assets/layers/background",
+      "required": true,
+      "weights": {
+        "desert": 20,
+        "forest": 25,
+        "ocean": 15,
+        "mountain": 20,
+        "city": 10,
+        "space": 5,
+        "void": 3,
+        "rainbow": 2
+      }
+    },
+    {
+      "name": "body",
+      "directory": "./assets/layers/body",
+      "required": true,
+      "weights": {
+        "dragon": 30,
+        "wolf": 25,
+        "tiger": 20,
+        "phoenix": 15,
+        "unicorn": 8,
+        "griffin": 2
+      }
+    },
+    {
+      "name": "eyes",
+      "directory": "./assets/layers/eyes",
+      "required": true,
+      "weights": {
+        "normal": 40,
+        "glowing": 25,
+        "laser": 15,
+        "crystal": 10,
+        "void": 5,
+        "galaxy": 3,
+        "golden": 2
+      }
+    },
+    {
+      "name": "mouth",
+      "directory": "./assets/layers/mouth",
+      "required": false,
+      "weights": {
+        "smile": 30,
+        "roar": 25,
+        "fangs": 20,
+        "fire": 15,
+        "lightning": 8,
+        "venom": 2
+      }
+    },
+    {
+      "name": "accessory",
+      "directory": "./assets/layers/accessory",
+      "required": false,
+      "weights": {
+        "crown": 15,
+        "armor": 20,
+        "necklace": 25,
+        "wings": 15,
+        "cape": 10,
+        "halo": 8,
+        "chains": 5,
+        "legendary_crown": 2
+      }
+    }
+  ],
+
+  "outputDir": "./output",
+  "imageSize": { "width": 512, "height": 512 },
+
+  "rarityWeights": {
+    "Common": 50,
+    "Uncommon": 30,
+    "Rare": 15,
+    "Epic": 4,
+    "Legendary": 1
+  },
+
+  "contract": {
+    "name": "CryptoBeasts",
+    "symbol": "BEAST",
+    "mintPrice": "0.08",
+    "maxSupply": 5000,
+    "maxMintPerTx": 5
+  }
+}
